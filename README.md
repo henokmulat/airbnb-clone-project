@@ -35,5 +35,56 @@ Manages the database system, including schema design, query optimization, backup
 ### DevOps Engineer  
 Handles deployment, continuous integration/continuous delivery (CI/CD), server management, and infrastructure automation. Ensures the application runs smoothly in production environments.
 
+## Database Design
+
+### Key Entities and Fields
+
+- **Users**  
+  - `id`: Unique identifier  
+  - `name`: Full name of the user  
+  - `email`: User’s email address (unique)  
+  - `password_hash`: Hashed password for authentication  
+  - `role`: Defines if the user is a guest or host  
+
+- **Properties**  
+  - `id`: Unique property identifier  
+  - `host_id`: References the user who owns the property  
+  - `title`: Property title or name  
+  - `description`: Detailed description of the property  
+  - `location`: Address or coordinates of the property  
+  - `price_per_night`: Cost per night for booking  
+
+- **Bookings**  
+  - `id`: Unique booking identifier  
+  - `user_id`: References the user who made the booking  
+  - `property_id`: References the booked property  
+  - `start_date`: Booking start date  
+  - `end_date`: Booking end date  
+  - `status`: Status of the booking (confirmed, cancelled, etc.)  
+
+- **Reviews**  
+  - `id`: Unique review identifier  
+  - `user_id`: References the user who wrote the review  
+  - `property_id`: References the reviewed property  
+  - `rating`: Numeric rating (e.g., 1-5 stars)  
+  - `comment`: Textual feedback  
+
+- **Payments**  
+  - `id`: Unique payment identifier  
+  - `booking_id`: References the related booking  
+  - `amount`: Payment amount  
+  - `payment_method`: Method used for payment (e.g., card, PayPal)  
+  - `status`: Payment status (completed, pending, failed)  
+
+### Relationships
+
+- A **User** can be a **Host** (own multiple Properties) or a **Guest** (make multiple Bookings).  
+- Each **Property** belongs to one **Host** (User).  
+- A **Booking** belongs to one **User** (Guest) and one **Property**.  
+- A **Review** is written by a **User** for a **Property** they have booked.  
+- A **Payment** is linked to one **Booking** and records transaction details.
+
+
+
 
 
