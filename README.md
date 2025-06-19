@@ -21,6 +21,17 @@ Manages the database system, including schema design, query optimization, backup
 ### Frontend Developer  
 (If applicable) Builds the user interface and client-side logic, ensuring an intuitive and responsive user experience. Collaborates closely with backend developers to consume APIs.
 
+## Technology Stack
+
+- **Django:** A high-level Python web framework used for building the backend RESTful APIs and managing server-side logic.
+- **PostgreSQL:** A powerful, open-source relational database system used to store and manage all application data efficiently and securely.
+- **GraphQL:** A query language for APIs that allows clients to request exactly the data they need, improving performance and flexibility.
+- **JWT (JSON Web Tokens):** Used for secure user authentication and authorization, enabling stateless sessions.
+- **Stripe:** A payment processing platform integrated to handle secure transactions and manage payment workflows.
+- **Docker:** Containerization tool to package the application and its dependencies, ensuring consistent deployment across environments.
+
+
+
 ### DevOps Engineer  
 Handles deployment, continuous integration/continuous delivery (CI/CD), server management, and infrastructure automation. Ensures the application runs smoothly in production environments.
 
