@@ -125,6 +125,20 @@ Security is a critical aspect of this Airbnb Clone backend to protect sensitive 
 
 Implementing these security measures is crucial to building user trust, protecting sensitive data, and ensuring the platform operates safely and reliably.
 
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of testing, building, and deploying the application. This ensures that code changes are reliably integrated and delivered quickly, reducing manual errors and accelerating development.
+
+For this project, implementing a CI/CD pipeline helps maintain code quality, allows frequent updates, and ensures that new features or fixes are deployed smoothly without downtime.
+
+Common tools used include:
+- **GitHub Actions:** Automates workflows directly within GitHub repositories for building, testing, and deploying code.
+- **Docker:** Provides containerization to package the application and its dependencies, ensuring consistent environments across development and production.
+- **Other tools:** Jenkins, Travis CI, CircleCI can also be used based on team preference.
+
+Integrating CI/CD is essential for maintaining agility, reliability, and scalability throughout the project lifecycle.
+
+
 
 
 
