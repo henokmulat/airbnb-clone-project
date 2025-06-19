@@ -84,6 +84,26 @@ Handles deployment, continuous integration/continuous delivery (CI/CD), server m
 - A **Review** is written by a **User** for a **Property** they have booked.  
 - A **Payment** is linked to one **Booking** and records transaction details.
 
+## Feature Breakdown
+
+- **User Management**  
+  This feature handles secure user registration, authentication, and profile management. It ensures that users can safely create accounts, log in, and manage their personal information throughout their interaction with the platform.
+
+- **Property Management**  
+  Allows hosts to create, update, and manage property listings. This includes adding detailed descriptions, images, and pricing, making it easy for users to browse and select properties that fit their needs.
+
+- **Booking System**  
+  Enables users to reserve properties for specific dates. The system manages booking details, availability checks, and allows users to view and modify their reservations.
+
+- **Payment Processing**  
+  Integrates a secure payment gateway to handle transactions between guests and hosts. It records payment details and ensures that financial operations are reliable and safe.
+
+- **Review System**  
+  Allows users to leave ratings and reviews for properties they have stayed at. This feature helps maintain transparency and builds trust within the community by providing valuable feedback.
+
+- **Data Optimization**  
+  Implements efficient database queries and indexing to optimize data retrieval and storage. This ensures the platform remains responsive and scalable as the user base grows.
+
 
 
 
