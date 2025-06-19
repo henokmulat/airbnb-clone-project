@@ -104,6 +104,28 @@ Handles deployment, continuous integration/continuous delivery (CI/CD), server m
 - **Data Optimization**  
   Implements efficient database queries and indexing to optimize data retrieval and storage. This ensures the platform remains responsive and scalable as the user base grows.
 
+  ## API Security
+
+Security is a critical aspect of this Airbnb Clone backend to protect sensitive user data, ensure safe transactions, and maintain overall system integrity. The following key security measures will be implemented:
+
+- **Authentication:**  
+  Secure user authentication (e.g., using JWT or OAuth) will verify user identities before granting access to the APIs. This prevents unauthorized access and protects user accounts and personal information.
+
+- **Authorization:**  
+  Role-based access control will ensure users can only perform actions they are permitted to (e.g., only hosts can manage their own properties). This prevents unauthorized actions and maintains data integrity.
+
+- **Rate Limiting:**  
+  To protect against brute force attacks and abuse, rate limiting will restrict the number of requests a client can make in a given timeframe. This helps maintain server stability and prevents denial-of-service attacks.
+
+- **Data Validation and Sanitization:**  
+  All input data will be validated and sanitized to prevent common vulnerabilities such as SQL injection and cross-site scripting (XSS).
+
+- **Secure Payment Processing:**  
+  Payment transactions will be handled via trusted third-party services (e.g., Stripe) to ensure sensitive payment information is processed securely and not stored directly on the server.
+
+Implementing these security measures is crucial to building user trust, protecting sensitive data, and ensuring the platform operates safely and reliably.
+
+
 
 
 
